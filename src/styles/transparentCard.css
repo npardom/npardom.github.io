@@ -1,0 +1,146 @@
+.transparentCard{
+    background-color: rgba(151, 151, 151, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+
+    padding: 2em;
+    width: 510px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 0.5s;
+    z-index: 102;
+
+    animation: appearCard 1s ease-in-out; 
+}
+
+.transparentCard.vertical {
+    flex-direction: column;
+    width: 300px;
+}
+
+.transparentCard h1{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
+    margin: 0;
+    width: fit-content;
+}
+
+.transparentCard h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: -0.2em 0 0 0;
+    width: fit-content;
+}
+
+.transparentCard p{
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+    width: fit-content;
+}
+
+.transparentCard.vertical a{
+    font-size: 1em;
+    text-decoration: underline
+}
+
+.transparentCard.vertical a:hover{
+   color: rgb(68, 179, 248);
+}
+
+.transparentCard.vertical h1{
+    margin: 0 0 0.7em 0;
+}
+
+.transparentCard.vertical p{
+    margin: 0.4em 0;
+}
+
+.textContainer {
+    width:240px;
+}
+
+.screenshotContainer{
+    position: relative;
+    width:240px;
+    height: 180px;
+    margin-right: 22px;
+}
+
+.screenshot{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projectLink{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.projectLink:hover{
+    opacity:1;
+}
+
+.CV{
+    width: 120px;
+    transform: rotate(5deg);
+    transition: all 0.4s;
+    margin: 0.5em 0;
+}
+
+.CV:hover{
+    transform: rotate(-5deg);
+}
+
+.CVContainer{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    width: 100%;
+}
+
+.CVindividual{
+    width: 120px;
+    text-align: center;
+    transition: all 0.4s;
+    text-decoration: none !important;
+}
+
+@keyframes appearCard{
+    0%{
+        opacity: 0;
+        top:100px;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        top:50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

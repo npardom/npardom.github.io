@@ -1,0 +1,117 @@
+.startButton{
+    position: absolute;
+    left:50%;
+    top:calc(50% + 5.7em);
+    transform: translate(-50%, -50%);
+
+    padding: 0.7em 1.5em;
+    border-radius: 0.8em;
+
+    font-weight: bold;
+    
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+
+    animation: appearButton 1.5s ease-in-out;
+
+    transition: transform 0.3s ease-in-out, top 1s ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.startButton:hover{
+   transform: translate(-50%, -50%) scale(0.93);
+}
+
+.startButton.hidden{
+    top:0%;
+}
+
+.containerBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    transition: 0.7s linear;
+}
+
+.containerBackground.hidden{
+    opacity:0;
+    pointer-events: none;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 2em;
+    border-radius: 1em;
+
+    width: 25em;
+    height: 3em;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    animation: appearCard 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+}
+
+.card.hidden{
+    opacity:0;
+    top:0% ;
+    pointer-events: none;
+}
+
+.card p{
+    font-weight: normal;
+    line-height: 1em;
+    font-size: 1.15em;
+}
+
+@keyframes appearCard {
+    0% {
+        opacity: 0;
+        top:30% ;
+    }
+    30% {
+        opacity: 0;
+        top:30% ;
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+@keyframes appearButton {
+    0% {
+        opacity: 0;
+        top:30% ;
+    }
+    30% {
+        opacity: 0;
+        top:30% ;
+    }
+    100% {
+        opacity: 1;
+        top:calc(50% + 5.7em);
+    }
+}

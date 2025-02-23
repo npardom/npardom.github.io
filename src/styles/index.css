@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    background-color: #08131E;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root::-webkit-scrollbar {
+    width: 0em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
