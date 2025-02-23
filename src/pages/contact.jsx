@@ -16,7 +16,7 @@ function Contact() {
     if (!e.target.classList.contains('containerBackground')) {
       return;
     }
-    navigate('/My-Website/');
+    navigate('/');
   };
 
   return (

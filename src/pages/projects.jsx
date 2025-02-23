@@ -16,7 +16,7 @@ function Projects() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const {language} = useContext(MyContext);
-  const [cardHidden, setCardHidden] = useState(false);
+  const [cardHidden] = useState(false);
 
   const projectsArray = [
     "bogoparche",
@@ -66,7 +66,7 @@ function Projects() {
 
   useEffect(()=>{
     if(!projectsArray.includes(slug.toLowerCase())){
-      navigate('/My-Website/');
+      navigate('/');
     }
   }, [])
 
@@ -74,7 +74,7 @@ function Projects() {
     if (!e.target.classList.contains('containerBackground')) {
       return;
     }
-    navigate('/My-Website/');
+    navigate('/');
   };
 
   return (

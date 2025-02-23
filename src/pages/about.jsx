@@ -13,14 +13,14 @@ function About() {
 
   const {language} = useContext(MyContext)
   const navigate = useNavigate();
-  const [cardHidden, setCardHidden] = useState(false);
+  const [cardHidden] = useState(false);
 
 
   const handleClick = (e) => {
     if (!e.target.classList.contains('containerBackground')) {
       return;
     }
-    navigate('/My-Website/');
+    navigate('/');
   };
 
   return (

@@ -4,11 +4,12 @@ import '../styles/home.css'
 import MyContext from '../context'
 
 function Home() {
-  const [cardHidden, setCardHidden] = useState(localStorage.getItem('visited') || false)
+  const [cardHidden, setCardHidden] = useState(localStorage.getItem('cardHidden') || false)
   const {language} = useContext(MyContext)
 
   useEffect(()=>{
-    localStorage.setItem('visited', 'true');
+    localStorage.setItem('cardHidden', true)
+    localStorage.setItem('language', language)
   }, [])
 
   return (

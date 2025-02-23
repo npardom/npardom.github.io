@@ -24,13 +24,13 @@ function Canvas() {
 
   return (
     <>
-    <img src={empty} className = "layerHover" id = "screenCardsArea" title='ScreenCards' onClick={()=> navigate('/My-Website/projects/screencards')} />
-    <img src={empty} className = "layerHover" id = "bogoParcheArea" title='BogoParche' onClick={()=> navigate('/My-Website/projects/bogoparche')}/>
-    <img src={empty} className = "layerHover" id = "computerArea" title={language === 'es' ? 'Sobre mí' : 'About me'} onClick={()=> navigate('/My-Website/about')}/>
-    <img src={empty} className = "layerHover" id = "pianoArea" title='Tiny Piano' onClick={()=> navigate('/My-Website/projects/piano')}/>
-    <img src={empty} className = "layerHover" id = "globeArea" title='Geography Quiz' onClick={()=> navigate('/My-Website/projects/geography')}/>
-    <img src={empty} className = "layerHover" id = "cardArea" title={language === 'es' ? 'Contacto' : 'Contact'} onClick = {()=> navigate('/My-Website/contact')}/>    
-    <img src={empty} className = "layerHover" id = "photoArea" title='Avatar Creator' onClick={()=> navigate('/My-Website/projects/avatar')}/>
+    <img src={empty} className = "layerHover" id = "screenCardsArea" title='ScreenCards' onClick={()=> navigate('/projects/screencards')} />
+    <img src={empty} className = "layerHover" id = "bogoParcheArea" title='BogoParche' onClick={()=> navigate('/projects/bogoparche')}/>
+    <img src={empty} className = "layerHover" id = "computerArea" title={language === 'es' ? 'Sobre mí' : 'About me'} onClick={()=> navigate('/about')}/>
+    <img src={empty} className = "layerHover" id = "pianoArea" title='Tiny Piano' onClick={()=> navigate('/projects/piano')}/>
+    <img src={empty} className = "layerHover" id = "globeArea" title='Geography Quiz' onClick={()=> navigate('/projects/geography')}/>
+    <img src={empty} className = "layerHover" id = "cardArea" title={language === 'es' ? 'Contacto' : 'Contact'} onClick = {()=> navigate('/contact')}/>    
+    <img src={empty} className = "layerHover" id = "photoArea" title='Avatar Creator' onClick={()=> navigate('/projects/avatar')}/>
 
     <img src={outside} className="layerImage" id="outside" />
     <img src={walls} className="layerImage" id="walls"/>

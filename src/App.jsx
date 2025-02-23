@@ -1,6 +1,6 @@
 // React and React Router Imports
-import { BrowserRouter  as Router, Routes, Route , Navigate} from 'react-router-dom';
-import { useState } from 'react'
+import { BrowserRouter  as Router, Routes, Route } from 'react-router-dom';
+import { useState , useE} from 'react'
 
 // Context and Constants Import
 import MyContext from './context.js';
@@ -31,18 +31,16 @@ function App() {
   }
 
   return (
-    <MyContext.Provider value={{
-      language,changeLanguage
-    }}>
+    <MyContext.Provider value={{ language,changeLanguage }}>
       <Router>
         <Menu />
         <Canvas />
         <LanguageButton />
         <Routes>
-          <Route path="/My-Website" element={<Home />} />
-          <Route path="/My-Website/contact" element={<Contact />} />
-          <Route path="/My-Website/about" element={<About />} />
-          <Route path="/My-Website/projects/:slug" element = {<Projects />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects/:slug" element = {<Projects />}/>
         </Routes>
         <Signature />
       </Router>
