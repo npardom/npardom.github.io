@@ -1,6 +1,6 @@
 // React and React Router Imports
-import { BrowserRouter  as Router, Routes, Route } from 'react-router-dom';
-import { useState , useE} from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState} from 'react'
 
 // Context and Constants Import
 import MyContext from './context.js';
