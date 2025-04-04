@@ -29,7 +29,7 @@ function Projects() {
   const projects = {
     "bogoparche": {
       "title": "BogoParche",
-      "year": "2023",
+      "year": "2023-2025",
       "descriptionEs": "Gestor de planes en la ciudad de Bogotá",
       "descriptionEn": "Event manager in Bogotá city",
       "link": "https://bogo-parche-front-end.vercel.app/"
