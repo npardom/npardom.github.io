@@ -5,8 +5,7 @@ import { useContext , useState} from 'react'
 import MyContext from '../context'
 import { useNavigate } from 'react-router-dom'
 
-import CV_spa from '../assets/PardoNicolas_CV_spa.pdf'
-import CV_eng from '../assets/PardoNicolas_CV_eng.pdf'
+import CV_eng from '../assets/PardoNicolas_CV.pdf'
 import cvMiniature from '../assets/images/cvMiniature.png'
 
 function About() {
@@ -37,16 +36,8 @@ function About() {
           </p>
 
           <div className='CVContainer'>
-
-            <a href={CV_spa} target="_blank" className='CVindividual'>
-              <img src={cvMiniature} className='CV'/>
-              {language === 'es' ? 'Español' : 'Spanish'}
-            </a>
-
             <a href={CV_eng} target="_blank" className='CVindividual'>
               <img src={cvMiniature} className='CV'/>
-              {language === 'es' ? 'Inglés' : 'English'}
-
             </a>
 
         </div>

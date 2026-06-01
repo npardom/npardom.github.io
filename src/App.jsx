@@ -19,8 +19,6 @@ import LanguageButton from './components/LanguageButton.jsx';
 
 // CSS and JS Import
 import './styles/index.css'
-import './assets/scripts.js'
-
 
 function App() {
   const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
